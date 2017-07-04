@@ -1,7 +1,16 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION["ID"])) {
+
+    header("location: Landingpage.php");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Unser Geiles Bild - Landing Page</title>
+    <title>The Society Explorer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
