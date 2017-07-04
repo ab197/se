@@ -24,7 +24,7 @@ if (strlen($text)>280) {
 }
 
 elseif ($_FILES['bild']['name'] == NULL) {
-    $sql = "INSERT INTO posts(user_ID, text) VALUES (:user_ID, :text)";
+    $sql = "INSERT INTO posts(user_ID, text, Datum) VALUES (:user_ID, :text,now())";
 
     $stmt = $dbh->prepare($sql);
 
@@ -38,7 +38,7 @@ elseif ($_FILES['bild']['name'] == NULL) {
 }
 
 else {
-    $sql = "INSERT INTO posts(user_ID, text, bild) VALUES (:user_ID, :text, :bild)";
+    $sql = "INSERT INTO posts(user_ID, text, bild, Datum) VALUES (:user_ID, :text, :bild,now())";
 
     $stmt = $dbh->prepare($sql);
 
