@@ -23,7 +23,7 @@ $stmt->execute();
 
 $user=$stmt->fetch();
 
-if (password_verify($password, $user["Passwort"])) {
+if (password_verify($passwortalt, $user["Passwort"])) {
 
     $sql="UPDATE user SET Passwort= :passwortneu WHERE ID = :ID";
     $stmt=$dbh->prepare ($sql);
@@ -35,3 +35,4 @@ if (password_verify($password, $user["Passwort"])) {
 
 }
 
+else{echo "hurensohn";}

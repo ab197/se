@@ -47,7 +47,7 @@ if (!isset($_SESSION["ID"])) {
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
                     <li><a href="Newpost.php">Neuer Post</a></li>
-                    <li><a href="#">Mein Profil</a></li>
+                    <li><a href="Profil.php">Mein Profil</a></li>
                     <li><a href="Funktionen/logout.php">Logout</a></li>
                 </ul>
 
@@ -86,10 +86,19 @@ foreach ($result as $row) {
 
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h2 class="panel-title"><?= $user['Benutzername'] ?></h2>
-            <span style="color: #AAA;"><?= $row['Datum'] ?></span>
+
+                <h2 class="panel-title"><?= $user['Benutzername'] ?></h2>
+                <span style="color: #AAA;"><?= $row['Datum'] ?></span>
+
+
         </div>
         <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-1">
+                    <img src="Bilder/Profilbild/<?= $row['user_ID'] ?>" class="img-responsive">
+                    </div>
+                <div class="col-xs-11">
+
             <?php
             if ($row['bild'] != NULL)
             {
@@ -101,7 +110,8 @@ foreach ($result as $row) {
             <p class="lead">
                 <?= $row['text'] ?>
             </p>
-
+            </div>
+        </div>
         </div>
         <div class="panel-footer">
             
