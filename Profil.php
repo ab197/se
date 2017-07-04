@@ -63,6 +63,15 @@ session_start();
 
         </div>
         <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-1">
+                    <img src="Bilder/Profilbild/<?= $_SESSION['ID'] ?>" class="img-responsive">
+                </div>
+                <div class="col-xs-11">
+
+
+
+
 
             <form action="Funktionen/profilbild.php" method="post" enctype="multipart/form-data">
 
@@ -73,6 +82,7 @@ session_start();
 
                 <button type="submit" name="submit" class="btn btn-default">hochladen</button>
             </form>
+                </div></div>
 
         </div>
     </div>

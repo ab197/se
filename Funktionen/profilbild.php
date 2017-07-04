@@ -16,6 +16,10 @@ $bild = $uploadfile;
 $uploadfile = $uploaddir . $uploadfile;
 
 
+unlink($uploaddir.$_SESSION["ID"].".jpeg");
+unlink($uploaddir.$_SESSION["ID"].".jpg");
+unlink($uploaddir.$_SESSION["ID"].".gif");
+unlink($uploaddir.$_SESSION["ID"].".png");
 
 
 
