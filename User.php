@@ -57,11 +57,21 @@ $ID=$_GET["ID"];
 
 
 <div class="container">
+    <?php
+    $sql="SELECT * FROM user WHERE ID = :ID";
+    $stmt=$dbh->prepare($sql);
+    $stmt->bindParam(":ID", $ID);
+
+    $stmt->execute();
+    $Username=$stmt->fetch();
+
+    $Username=$Username["Benutzername"];
 
 
 
-    <h1>alle posts</h1>
 
+   ?>
+    <h1>alle posts von <?= $Username ?></h1>
     <?php
 
     $sql="SELECT * FROM posts WHERE user_ID = :ID";
@@ -73,14 +83,7 @@ $ID=$_GET["ID"];
 
 
     foreach ($result as $row) {
-        $sql = "SELECT Benutzername FROM user WHERE ID = :user_ID";
-        $stmt= $dbh->prepare($sql);
 
-        $stmt->bindParam(":user_ID", $row['user_ID']);
-
-        $stmt->execute();
-
-        $user=$stmt->fetch();
 
         ?>
 
@@ -89,7 +92,7 @@ $ID=$_GET["ID"];
         <div class="panel panel-default">
             <div class="panel-heading">
 
-                <h2 class="panel-title"><?= $user['Benutzername'] ?></h2>
+                <h2 class="panel-title"><?= $Username ?></h2>
                 <span style="color: #AAA;"><?= $row['Datum'] ?></span>
 
 

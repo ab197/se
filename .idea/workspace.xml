@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f26ddeb-f330-492e-80f0-225447516970" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Landingpage.php" afterPath="$PROJECT_DIR$/Landingpage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User.php" afterPath="$PROJECT_DIR$/User.php" />
     </list>
     <ignored path="se.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,14 +47,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+            <state relative-caret-position="506">
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
-                <marker date="1499686646687" expanded="true" signature="2051:2090" ph="SELECT * FRO... posts" />
-                <marker date="1499686646687" expanded="true" signature="2262:2311" ph="SELECT Benut... user" />
+                <marker date="1499687597844" expanded="true" signature="2022:2055" ph="SELECT * FRO... user" />
+                <marker date="1499687597844" expanded="true" signature="2294:2333" ph="SELECT * FRO... posts" />
               </folding>
             </state>
           </provider>
@@ -102,14 +103,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Landingpage.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Landingpage.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Landingpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="134" selection-end-column="7" />
+            <state relative-caret-position="1474">
+              <caret line="88" column="45" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
               <folding>
-                <marker date="1499172014562" expanded="true" signature="2159:2178" ph="SELECT * FRO... posts" />
-                <marker date="1499172014562" expanded="true" signature="2296:2345" ph="SELECT Benut... user" />
+                <marker date="1499688947803" expanded="true" signature="2159:2178" ph="SELECT * FRO... posts" />
+                <marker date="1499688947803" expanded="true" signature="2296:2345" ph="SELECT Benut... user" />
               </folding>
             </state>
           </provider>
@@ -184,7 +185,6 @@
         <option value="$PROJECT_DIR$/Neuer LogIn.php" />
         <option value="$PROJECT_DIR$/dbh.php" />
         <option value="$PROJECT_DIR$/Funktionen/passwort.php" />
-        <option value="$PROJECT_DIR$/Landingpage.php" />
         <option value="$PROJECT_DIR$/NeuerLogIn.php" />
         <option value="$PROJECT_DIR$/Funktionen/newpost.php" />
         <option value="$PROJECT_DIR$/Viewpost.php" />
@@ -194,6 +194,7 @@
         <option value="$PROJECT_DIR$/Profil.php" />
         <option value="$PROJECT_DIR$/Funktionen/profilbild.php" />
         <option value="$PROJECT_DIR$/User.php" />
+        <option value="$PROJECT_DIR$/Landingpage.php" />
       </list>
     </option>
   </component>
@@ -378,7 +379,7 @@
       <workItem from="1498743562385" duration="3618000" />
       <workItem from="1499161773010" duration="463000" />
       <workItem from="1499164893124" duration="11482000" />
-      <workItem from="1499685463268" duration="1179000" />
+      <workItem from="1499685463268" duration="3202000" />
     </task>
     <task id="LOCAL-00001" summary="passwort">
       <created>1499168719045</created>
@@ -408,11 +409,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499176781517</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Userseite">
+      <created>1499686661409</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1499686661409</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62518000" />
+    <option name="totallyTimeSpent" value="64541000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -454,7 +462,8 @@
     <MESSAGE value="passwort" />
     <MESSAGE value="postanzeigen" />
     <MESSAGE value="profilbild" />
-    <option name="LAST_COMMIT_MESSAGE" value="profilbild" />
+    <MESSAGE value="Userseite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Userseite" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -780,17 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Landingpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="134" selection-end-column="7" />
-          <folding>
-            <marker date="1499172014562" expanded="true" signature="2159:2178" ph="SELECT * FRO... posts" />
-            <marker date="1499172014562" expanded="true" signature="2296:2345" ph="SELECT Benut... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Registrierung.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -811,11 +809,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+        <state relative-caret-position="506">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
-            <marker date="1499686646687" expanded="true" signature="2051:2090" ph="SELECT * FRO... posts" />
-            <marker date="1499686646687" expanded="true" signature="2262:2311" ph="SELECT Benut... user" />
+            <marker date="1499687597844" expanded="true" signature="2022:2055" ph="SELECT * FRO... user" />
+            <marker date="1499687597844" expanded="true" signature="2294:2333" ph="SELECT * FRO... posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Landingpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1474">
+          <caret line="88" column="45" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
+          <folding>
+            <marker date="1499688947803" expanded="true" signature="2159:2178" ph="SELECT * FRO... posts" />
+            <marker date="1499688947803" expanded="true" signature="2296:2345" ph="SELECT Benut... user" />
           </folding>
         </state>
       </provider>

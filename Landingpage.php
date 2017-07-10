@@ -86,8 +86,8 @@ foreach ($result as $row) {
 
     <div class="panel panel-default">
         <div class="panel-heading">
-
-                <h2 class="panel-title"><?= $user['Benutzername'] ?></h2>
+                <a href="User.php?ID=<?= $row['user_ID']?>">
+                <h2 class="panel-title"><?= $user['Benutzername'] ?></h2> </a>
                 <span style="color: #AAA;"><?= $row['Datum'] ?></span>
 
 
