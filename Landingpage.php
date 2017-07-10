@@ -63,8 +63,22 @@ if (!isset($_SESSION["ID"])) {
 <h1>alle posts</h1>
 
 <?php
+$ID=$_SESSION["ID"];
+$sql = "SELECT * FROM folgen WHERE user_ID= :user_ID";
+$stmt=$dbh->prepare ($sql);
+$stmt->bindParam(":user_ID", $ID);
+$stmt->execute();
+$folgen=$stmt->fetchAll();
+$folgt = array();
 
-$sql="SELECT * FROM posts";
+foreach ($folgen as $value){
+    $folgt[] = $value;
+}
+var_dump($folgt);
+
+
+
+$sql="SELECT * FROM posts WHERE user_ID IN ($folgt)";
 $stmt=$dbh->prepare ($sql);
 $stmt->execute();
 $result=$stmt->fetchAll();

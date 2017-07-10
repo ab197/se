@@ -71,9 +71,8 @@ $ID=$_GET["ID"];
 
 
    ?>
-    <h1>alle posts von <?= $Username ?></h1>
+    <h1>alle posts von <?= $Username ?><a href="Funktionen/folgen.php?ID=<?= $ID ?> ">folgen</a></h1>
     <?php
-
     $sql="SELECT * FROM posts WHERE user_ID = :ID";
     $stmt=$dbh->prepare($sql);
     $stmt->bindParam(":ID", $ID);
