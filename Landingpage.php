@@ -7,7 +7,7 @@ if (!isset($_SESSION["ID"])) {
 
     header("location: Login.php");
 }
-
+$ID = $_SESSION["ID"];
 
 ?>
 
@@ -48,6 +48,7 @@ if (!isset($_SESSION["ID"])) {
                 <ul class="nav navbar-nav">
                     <li><a href="Newpost.php">Neuer Post</a></li>
                     <li><a href="Profil.php">Mein Profil</a></li>
+                    <li><a href="Suche.php">User suchen</a></li>
                     <li><a href="Funktionen/logout.php">Logout</a></li>
                 </ul>
 
@@ -57,8 +58,38 @@ if (!isset($_SESSION["ID"])) {
 
 
 <div class="container">
+    <div class="row">
+        <div class="col-md-3">
+
+            <img src="Bilder/Profilbild/<?= $_SESSION['ID'] ?>" class="img-responsive">
+            <h2><?= $_SESSION["Benutzername"] ?></h2>
 
 
+
+
+            <h2>du folgst: </h2>
+            <div class="row">
+
+            <?php
+            $sql="SELECT folgt_ID FROM folgen WHERE user_ID = ($ID)";
+            $stmt=$dbh->prepare($sql);
+            $stmt->execute();
+            $ergebnis=$stmt->fetchAll();
+            foreach ($ergebnis as $value ){
+                ?>
+
+                <div class="col-xs-3">
+                    <a href="User.php?ID=<?= $value['folgt_ID'] ?>">
+                        <img src="Bilder/Profilbild/<?= $value['folgt_ID'] ?>" class="img-responsive">
+                    </a>
+                </div>
+
+
+                <?php
+            }
+            ?></div>
+    </div>
+    <div class="col-md-9">
 
 <h1>alle posts</h1>
 
@@ -131,13 +162,20 @@ foreach ($result as $row) {
         </div>
         </div>
         <div class="panel-footer">
-            
 
-            
-            
+
+
+
             <a href='Viewpost.php?id=<?=$row['ID']?>'>anzeigen</a>
+            <?php
+            if ($_SESSION["ID"] == $row["user_ID"]) {
+            ?>
             <a href='Funktionen/deletepost.php?id=<?=$row['ID']?>'>löschen</a>
             <a href='Editieren.php?id=<?=$row['ID']?>'>editieren</a>
+            <?php } ?>
+
+
+
         </div>
     </div>
 
@@ -147,6 +185,7 @@ foreach ($result as $row) {
 <?php
 }
 ?>
+    </div>
+</div></div>
 
-</div>
 </body>

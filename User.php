@@ -7,8 +7,10 @@ if (!isset($_SESSION["ID"])) {
 
     header("location: Login.php");
 }
-$ID=$_GET["ID"];
 
+if (isset($_GET["ID"])) {
+    $ID = $_GET["ID"];
+} else { header("location: User.php?ID=".$_SESSION["ID"]);}
 
     $sql="SELECT * FROM user WHERE ID = :ID";
     $stmt=$dbh->prepare($sql);
@@ -57,6 +59,7 @@ $ID=$_GET["ID"];
             <ul class="nav navbar-nav">
                 <li><a href="Newpost.php">Neuer Post</a></li>
                 <li><a href="Profil.php">Mein Profil</a></li>
+                <li><a href="Suche.php">User suchen</a></li>
                 <li><a href="Funktionen/logout.php">Logout</a></li>
             </ul>
 

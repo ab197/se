@@ -44,6 +44,7 @@ $result=$stmt->fetch()
             <ul class="nav navbar-nav">
                 <li><a href="Newpost.php">Neuer Post</a></li>
                 <li><a href="Profil.php">Mein Profil</a></li>
+                <li><a href="Suche.php">User suchen</a></li>
                 <li><a href="Funktionen/logout.php">Logout</a></li>
             </ul>
 

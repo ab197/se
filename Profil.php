@@ -47,7 +47,8 @@ session_start();
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
                 <li><a href="Newpost.php">Neuer Post</a></li>
-                <li><a href="#">Mein Profil</a></li>
+                <li><a href="Profil.php">Mein Profil</a></li>
+                <li><a href="Suche.php">User suchen</a></li>
                 <li><a href="Funktionen/logout.php">Logout</a></li>
             </ul>
 
