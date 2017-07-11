@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9f26ddeb-f330-492e-80f0-225447516970" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Suche.php" afterPath="$PROJECT_DIR$/Suche.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User.php" afterPath="$PROJECT_DIR$/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hintergrund.css" afterPath="$PROJECT_DIR$/hintergrund.css" />
     </list>
     <ignored path="se.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -419,7 +416,7 @@
       <workItem from="1499685463268" duration="4453000" />
       <workItem from="1499690293631" duration="1724000" />
       <workItem from="1499759534854" duration="9525000" />
-      <workItem from="1499769555314" duration="8123000" />
+      <workItem from="1499769555314" duration="8151000" />
     </task>
     <task id="LOCAL-00001" summary="passwort">
       <created>1499168719045</created>
@@ -512,11 +509,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499778191797</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="userseite">
+      <created>1499779877843</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1499779877843</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85164000" />
+    <option name="totallyTimeSpent" value="85192000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
