@@ -32,6 +32,9 @@ body {
     background-color: rgba(255, 255, 255, 0.7532);
 }
 
+.panel-transparent .panel-body{
+    background: rgba(46, 51, 56, 0.2)!important;
+
 .margin-base-vertical {
     margin: 40px 0;
 }

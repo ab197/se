@@ -94,7 +94,7 @@ $ID = $_SESSION["ID"];
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-xs-1">
-                                <img src="Bilder/Profilbild/<?= $user['ID'] ?>">
+                                <img src="Bilder/Profilbild/<?= $user['ID'] ?>" class="img-responsive">
                             </div>
                             <div class="col-xs-11">
                                 <span><a href="User.php?ID=<?= $user['ID'] ?>"><span class="lead"><?= $user['Benutzername'] ?></span></a> </span>

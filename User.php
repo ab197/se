@@ -74,16 +74,14 @@ if (isset($_GET["ID"])) {
 
     <div class="row">
         <div class="col-md-3">
-            <?php
-            if ($row['bild'] != NULL)
-            {
-                ?>
-                <img src="Bilder/<?= $row['bild'] ?>" class="img-responsive" style="margin-bottom: 50px;">
-                <?php
-            }
-            ?>
+
+                <img src="Bilder/Profilbild/<?= $ID ?>" class="img-responsive" style="margin-bottom: 50px;">
+
+            <div class="gemini">
 
             <h2><?= $Username ?></h2>
+
+                </div>
             <?php
 
             $sql="SELECT * FROM folgen WHERE user_ID = :sessionID AND folgt_ID = ($ID)";
@@ -102,7 +100,12 @@ if (isset($_GET["ID"])) {
 
 
             ?>
-<h2>folgt: </h2>
+
+            <div class="gemini">
+            <h2>folgt: </h2>
+
+            </div>
+
             <div class="row">
 
             <?php
