@@ -5,7 +5,7 @@ session_start();
 
 $folgt_ID=$_GET["ID"];
 
-$sql = "INSERT INTO folgen(user_ID, folgt_ID) VALUES (:user_ID, :folgt_ID)";
+$sql="DELETE FROM folgen WHERE user_ID = :user_ID AND folgt_ID = :folgt_ID";
 
 $stmt = $dbh->prepare($sql);
 

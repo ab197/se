@@ -9,6 +9,15 @@ if (!isset($_SESSION["ID"])) {
 }
 $ID=$_GET["ID"];
 
+
+    $sql="SELECT * FROM user WHERE ID = :ID";
+    $stmt=$dbh->prepare($sql);
+    $stmt->bindParam(":ID", $ID);
+
+    $stmt->execute();
+    $Username=$stmt->fetch();
+
+    $Username=$Username["Benutzername"];
 ?>
 
 <!DOCTYPE html>
@@ -57,21 +66,50 @@ $ID=$_GET["ID"];
 
 
 <div class="container">
-    <?php
-    $sql="SELECT * FROM user WHERE ID = :ID";
-    $stmt=$dbh->prepare($sql);
-    $stmt->bindParam(":ID", $ID);
 
-    $stmt->execute();
-    $Username=$stmt->fetch();
+    <div class="row">
+        <div class="col-md-3">
+            <?php
+            if ($row['bild'] != NULL)
+            {
+                ?>
+                <img src="Bilder/<?= $row['bild'] ?>" class="img-responsive" style="margin-bottom: 50px;">
+                <?php
+            }
+            ?>
 
-    $Username=$Username["Benutzername"];
+            <h2><?= $Username ?></h2>
+            <?php
+
+            $sql="SELECT * FROM folgen WHERE user_ID = :sessionID AND folgt_ID = ($ID)";
+            $stmt=$dbh->prepare($sql);
+            $stmt->bindParam(":sessionID",$_SESSION["ID"]);
+            $stmt->execute();
+            $ergebnis=$stmt->fetch();
+
+            if ($ergebnis != false){ ?>
+                <a href="Funktionen/entfolgen.php?ID=<?= $ID ?> " class="btn btn-default" role="button">nicht mehr folgen</a>
+            <?php } else {
+                ?>
+                <a href="Funktionen/folgen.php?ID=<?= $ID ?> " class="btn btn-default" role="button">folgen</a>
+            <?php
+            }
+
+
+            ?>
+
+        </div>
+        <div class="col-md-9">
 
 
 
 
-   ?>
-    <h1>alle posts von <?= $Username ?><a href="Funktionen/folgen.php?ID=<?= $ID ?> ">folgen</a></h1>
+
+
+
+
+
+    <h1>alle posts von <?= $Username ?></h1>
     <?php
     $sql="SELECT * FROM posts WHERE user_ID = :ID";
     $stmt=$dbh->prepare($sql);
@@ -134,6 +172,7 @@ $ID=$_GET["ID"];
         <?php
     }
     ?>
+</div></div>
 
 </div>
 </body>

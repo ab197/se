@@ -72,9 +72,12 @@ $folgen=$stmt->fetchAll();
 $folgt = array();
 
 foreach ($folgen as $value){
-    $folgt[] = $value;
+    $folgt[] = $value["folgt_ID"];
 }
-var_dump($folgt);
+
+$folgt=implode(",",$folgt);
+
+
 
 
 
