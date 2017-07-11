@@ -14,39 +14,9 @@ if (isset($_SESSION["ID"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-    <style>
 
+    <link href="hintergrund.css" rel="stylesheet" />
 
-        html {
-
-        }
-
-        body {
-            padding-top: 60px;
-            font-size: 16px;
-            font-family: "Futura", sans-serif;
-            backgroud: transparent;
-
-            background: url(http://www.lightsniper.de/wordpress/wp-content/gallery/hasenberg/DSC_3309-Panorama.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-        h1 {
-            font-family: "Futura";
-            font-weight: 400;
-            font-size: 32px;
-        }
-
-        .panel {
-            background-color: rgba(255, 255, 255, 0.7532);
-        }
-
-        .margin-base-vertical {
-            margin: 40px 0;
-        }
-    </style>
 </head>
 <body>
 <div class="container">

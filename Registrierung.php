@@ -11,40 +11,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <style>
-        html {
-
-        }
-
-        body {
-            padding-top: 60px;
-            font-size: 16px;
-            font-family: "Futura";
-            backgroud: transparent;
-
-            background: url(http://www.lightsniper.de/wordpress/wp-content/gallery/hasenberg/DSC_3309-Panorama.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-        h1 {
-            font-family: "Futura";
-            font-weight: 400;
-            font-size: 32px;
-        }
-
-        .panel {
-            background-color: rgba(255, 255, 255, 0.7532);
-        }
-
-        .margin-base-vertical {
-            margin: 40px 0;
-        }
-
-
-
-    </style>
+    <link href="hintergrund.css" rel="stylesheet" />
 
 </head>
 <body>
