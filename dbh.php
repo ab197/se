@@ -1,7 +1,7 @@
 <?php
 
 //   {
-    $dbh = new PDO("mysql:: host=mars.iuk.hdm-stuttgart.de;dbname=u-cs208", "cs208", "ne4Oomangi");
+    $dbh = new PDO("mysql:: host=mars.iuk.hdm-stuttgart.de;dbname=u-ab197", "ab197", "aef8UVuN7e");
 /*
 }
 

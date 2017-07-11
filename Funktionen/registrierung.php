@@ -22,7 +22,6 @@ else {
     echo ("Diese Passwörter sind nicht identisch!");
     $error=true;
     exit();
-    header("location: ../Registrierung.php");
 
 }
 

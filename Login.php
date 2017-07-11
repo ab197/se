@@ -50,13 +50,13 @@ if (isset($_SESSION["ID"])) {
                         <input name="Passwort" type="password" class="form-control" id="password" placeholder="Passwort">
                     </div>
 
-                    <button type="submit" class="btn btn-default btn-md">Lift Off!</button> <button type="link" class="btn btn-default btn-md text-right" onclick="location='Registrierung.php'">Register</button> <button type="link" class="btn btn-default btn-md text-right" onclick="location='Wersindwir.php'">Who we are!</button>
+                    <button type="submit" class="btn btn-default btn-md">Lift Off!</button>
 
 
 
 
-                    </span>
                 </form>
+                <button type="link" class="btn btn-default btn-md text-right" onclick="location='Registrierung.php'">Register</button> <button type="link" class="btn btn-default btn-md text-right" onclick="location='Wersindwir.php'">Who we are!</button>
 
             </div>
         </div>
