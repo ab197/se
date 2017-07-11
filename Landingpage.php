@@ -63,6 +63,7 @@ $ID = $_SESSION["ID"];
     <div class="row">
         <div class="col-md-3">
 
+
             <img src="Bilder/Profilbild/<?= $_SESSION['ID'] ?>" class="img-responsive">
             <h2><?= $_SESSION["Benutzername"] ?></h2>
 
@@ -89,7 +90,9 @@ $ID = $_SESSION["ID"];
 
                 <?php
             }
-            ?></div>
+            ?>
+
+            </div>
     </div>
     <div class="col-md-9">
 

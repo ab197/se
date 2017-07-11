@@ -12,14 +12,17 @@ if (isset($_SESSION["ID"])) {
 <head>
     <title>The Society Explorer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 
     <link href="hintergrund.css" rel="stylesheet" />
 
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+
+
+
 </head>
 <body>
-<div class="container">
+<div class="container apollo">
     <div class="row">
         <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6">
             <div class="panel" style="padding: 20px">
