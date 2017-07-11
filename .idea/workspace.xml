@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9f26ddeb-f330-492e-80f0-225447516970" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Landingpage.php" afterPath="$PROJECT_DIR$/Landingpage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Login.php" afterPath="$PROJECT_DIR$/Login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hintergrund.css" afterPath="$PROJECT_DIR$/hintergrund.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Registrierung.php" afterPath="$PROJECT_DIR$/Registrierung.php" />
     </list>
     <ignored path="se.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +34,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Landingpage.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Registrierung.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Registrierung.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Landingpage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Landingpage.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -112,13 +120,13 @@
         <option value="$PROJECT_DIR$/Editieren.php" />
         <option value="$PROJECT_DIR$/Newpost.php" />
         <option value="$PROJECT_DIR$/Profil.php" />
-        <option value="$PROJECT_DIR$/Registrierung.php" />
         <option value="$PROJECT_DIR$/User.php" />
         <option value="$PROJECT_DIR$/Viewpost.php" />
         <option value="$PROJECT_DIR$/Wersindwir.php" />
         <option value="$PROJECT_DIR$/Login.php" />
         <option value="$PROJECT_DIR$/hintergrund.css" />
         <option value="$PROJECT_DIR$/Landingpage.php" />
+        <option value="$PROJECT_DIR$/Registrierung.php" />
       </list>
     </option>
   </component>
@@ -295,7 +303,7 @@
       <workItem from="1499685463268" duration="4453000" />
       <workItem from="1499690293631" duration="1724000" />
       <workItem from="1499759534854" duration="9525000" />
-      <workItem from="1499769555314" duration="3589000" />
+      <workItem from="1499769555314" duration="3742000" />
     </task>
     <task id="LOCAL-00001" summary="passwort">
       <created>1499168719045</created>
@@ -367,11 +375,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499771830126</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="userseite">
+      <created>1499774035016</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1499774035016</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80630000" />
+    <option name="totallyTimeSpent" value="80783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -676,14 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Registrierung.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Profil.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -748,6 +755,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Landingpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
+          <folding>
+            <marker date="1499773860000" expanded="true" signature="2568:2617" ph="SELECT folgt... folgen" />
+            <marker date="1499773860000" expanded="true" signature="3221:3265" ph="SELECT * FRO... folgen" />
+            <marker date="1499773860000" expanded="true" signature="3501:3546" ph="SELECT * FRO... posts" />
+            <marker date="1499773860000" expanded="true" signature="3664:3713" ph="SELECT Benut... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hintergrund.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -764,16 +784,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Landingpage.php">
+    <entry file="file://$PROJECT_DIR$/Registrierung.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
-          <folding>
-            <marker date="1499773860000" expanded="true" signature="2568:2617" ph="SELECT folgt... folgen" />
-            <marker date="1499773860000" expanded="true" signature="3221:3265" ph="SELECT * FRO... folgen" />
-            <marker date="1499773860000" expanded="true" signature="3501:3546" ph="SELECT * FRO... posts" />
-            <marker date="1499773860000" expanded="true" signature="3664:3713" ph="SELECT Benut... user" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container apollo">
     <div class="row">
         <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6">
             <div class="panel" style="padding: 20px">
