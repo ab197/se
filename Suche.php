@@ -93,10 +93,10 @@ $ID = $_SESSION["ID"];
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-xs-3">
-                                <img src="Bilder/Profilbild/<?= $user['ID'] ?>"
+                            <div class="col-xs-1">
+                                <img src="Bilder/Profilbild/<?= $user['ID'] ?>">
                             </div>
-                            <div class="col-xs-9">
+                            <div class="col-xs-11">
                                 <span><a href="User.php?ID=<?= $user['ID'] ?>"><span class="lead"><?= $user['Benutzername'] ?></span></a> </span>
                             </div>
                         </div>
