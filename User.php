@@ -97,8 +97,27 @@ $ID=$_GET["ID"];
 
 
             ?>
+<h2>folgt: </h2>
+            <div class="row">
 
-        </div>
+            <?php
+            $sql="SELECT folgt_ID FROM folgen WHERE user_ID = ($ID)";
+            $stmt=$dbh->prepare($sql);
+            $stmt->execute();
+            $ergebnis=$stmt->fetchAll();
+            foreach ($ergebnis as $value ){
+                ?>
+
+                <div class="col-xs-3">
+                    <a href="User.php?ID=<?= $value['folgt_ID'] ?>">
+                        <img src="Bilder/Profilbild/<?= $value['folgt_ID'] ?>" class="img-responsive">
+                    </a>
+                </div>
+
+                <?php
+            }
+            ?>
+        </div></div>
         <div class="col-md-9">
 
 
@@ -158,11 +177,13 @@ $ID=$_GET["ID"];
             <div class="panel-footer">
 
 
-
-
                 <a href='Viewpost.php?id=<?=$row['ID']?>'>anzeigen</a>
+<?php
+if ($_SESSION["ID"] == $row["user_ID"]) {
+?>
                 <a href='Funktionen/deletepost.php?id=<?=$row['ID']?>'>löschen</a>
                 <a href='Editieren.php?id=<?=$row['ID']?>'>editieren</a>
+                <?php } ?>
             </div>
         </div>
 
