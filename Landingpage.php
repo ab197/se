@@ -63,6 +63,7 @@ $ID = $_SESSION["ID"];
     <div class="row">
         <div class="col-md-3">
 
+            <div class="gemini">
 
             <img src="Bilder/Profilbild/<?= $_SESSION['ID'] ?>" class="img-responsive">
             <h2><?= $_SESSION["Benutzername"] ?></h2>
@@ -71,7 +72,11 @@ $ID = $_SESSION["ID"];
 
 
             <h2>du folgst: </h2>
+
+                </div>
+
             <div class="row">
+
 
             <?php
             $sql="SELECT folgt_ID FROM folgen WHERE user_ID = ($ID)";
@@ -96,7 +101,7 @@ $ID = $_SESSION["ID"];
     </div>
     <div class="col-md-9">
 
-<h1>alle posts</h1>
+<h1>Alle Posts</h1>
 
 <?php
 $ID=$_SESSION["ID"];

@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<div class="container">
+<div class="container apollo">
     <div class="row">
         <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6">
             <div class="panel" style="padding: 20px">
@@ -25,8 +25,8 @@
                 <p>
                     Emma Watson: "The Society Explorer changed my live! Thank you for making the social world great again!
                 </p>
-                <p> Johhny Deep: "The SE got me new power to stay up-to-date with my friends!</p>
-                <p><h1>What about you? Become part of the family!</h1></p>
+                <p> Johhny Depp: "The SE got me new power to stay up-to-date with my friends!</p>
+                <p><h3>What about you? Become part of the family!</h3></p>
                <br>
                 <button type="link" class="btn btn-default btn-md" onclick="location='Registrierung.php'">Register</button>
 

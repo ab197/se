@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9f26ddeb-f330-492e-80f0-225447516970" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Registrierung.php" afterPath="$PROJECT_DIR$/Registrierung.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Landingpage.php" afterPath="$PROJECT_DIR$/Landingpage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Login.php" afterPath="$PROJECT_DIR$/Login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wersindwir.php" afterPath="$PROJECT_DIR$/Wersindwir.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hintergrund.css" afterPath="$PROJECT_DIR$/hintergrund.css" />
     </list>
     <ignored path="se.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,17 +27,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            <state relative-caret-position="60">
+              <caret line="52" column="211" selection-start-line="52" selection-start-column="211" selection-end-line="52" selection-end-column="211" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Registrierung.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Registrierung.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Registrierung.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -44,26 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Landingpage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Landingpage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
-              <folding>
-                <marker date="1499773860000" expanded="true" signature="2568:2617" ph="SELECT folgt... folgen" />
-                <marker date="1499773860000" expanded="true" signature="3221:3265" ph="SELECT * FRO... folgen" />
-                <marker date="1499773860000" expanded="true" signature="3501:3546" ph="SELECT * FRO... posts" />
-                <marker date="1499773860000" expanded="true" signature="3664:3713" ph="SELECT Benut... user" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="hintergrund.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hintergrund.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            <state relative-caret-position="180">
+              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -122,11 +110,11 @@
         <option value="$PROJECT_DIR$/Profil.php" />
         <option value="$PROJECT_DIR$/User.php" />
         <option value="$PROJECT_DIR$/Viewpost.php" />
+        <option value="$PROJECT_DIR$/Registrierung.php" />
         <option value="$PROJECT_DIR$/Wersindwir.php" />
-        <option value="$PROJECT_DIR$/Login.php" />
         <option value="$PROJECT_DIR$/hintergrund.css" />
         <option value="$PROJECT_DIR$/Landingpage.php" />
-        <option value="$PROJECT_DIR$/Registrierung.php" />
+        <option value="$PROJECT_DIR$/Login.php" />
       </list>
     </option>
   </component>
@@ -197,12 +185,13 @@
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Christopher\PhpstormProjects\se\se\Funktionen" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Christopher\PhpstormProjects\se\se\Funktionen" />
       <recent name="C:\Users\Christopher\PhpstormProjects\se\se" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Funktionen" />
+      <recent name="C:\Users\Christopher\PhpstormProjects\se\se\Funktionen" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.Test HTML.html">
@@ -303,7 +292,7 @@
       <workItem from="1499685463268" duration="4453000" />
       <workItem from="1499690293631" duration="1724000" />
       <workItem from="1499759534854" duration="9525000" />
-      <workItem from="1499769555314" duration="3742000" />
+      <workItem from="1499769555314" duration="6530000" />
     </task>
     <task id="LOCAL-00001" summary="passwort">
       <created>1499168719045</created>
@@ -382,11 +371,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499774035016</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="userseite">
+      <created>1499774205821</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1499774205821</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80783000" />
+    <option name="totallyTimeSpent" value="83571000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -720,14 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Wersindwir.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/test hover.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -747,39 +735,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Funktionen/profilbild.php">
+    <entry file="file://$PROJECT_DIR$/hintergrund.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Landingpage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
+        <state relative-caret-position="285">
+          <caret line="103" column="10" selection-start-line="103" selection-start-column="10" selection-end-line="103" selection-end-column="10" />
           <folding>
-            <marker date="1499773860000" expanded="true" signature="2568:2617" ph="SELECT folgt... folgen" />
-            <marker date="1499773860000" expanded="true" signature="3221:3265" ph="SELECT * FRO... folgen" />
-            <marker date="1499773860000" expanded="true" signature="3501:3546" ph="SELECT * FRO... posts" />
-            <marker date="1499773860000" expanded="true" signature="3664:3713" ph="SELECT Benut... user" />
+            <marker date="1499777933000" expanded="true" signature="2627:2676" ph="SELECT folgt... folgen" />
+            <marker date="1499777933000" expanded="true" signature="3280:3324" ph="SELECT * FRO... folgen" />
+            <marker date="1499777933000" expanded="true" signature="3560:3605" ph="SELECT * FRO... posts" />
+            <marker date="1499777933000" expanded="true" signature="3723:3772" ph="SELECT Benut... user" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hintergrund.css">
+    <entry file="file://$PROJECT_DIR$/Wersindwir.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        <state relative-caret-position="270">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login.php">
+    <entry file="file://$PROJECT_DIR$/Funktionen/profilbild.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -788,6 +776,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="52" column="211" selection-start-line="52" selection-start-column="211" selection-end-line="52" selection-end-column="211" />
           <folding />
         </state>
       </provider>
