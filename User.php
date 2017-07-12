@@ -1,5 +1,11 @@
 <?php
 
+/*
+ * ist so aufgebaut wie die Landingpage, nur das die Posts von dem jeweiliger besitzer angezeigt werden.
+ * ID wird über die Methode Get übergeben. Es kann hier den Personen gefolgt werden
+ */
+
+
 include "dbh.php";
 session_start();
 
@@ -84,13 +90,13 @@ if (isset($_GET["ID"])) {
                 </div>
             <?php
 
-            $sql="SELECT * FROM folgen WHERE user_ID = :sessionID AND folgt_ID = ($ID)";
-            $stmt=$dbh->prepare($sql);
+            $sql="SELECT * FROM folgen WHERE user_ID = :sessionID AND folgt_ID = ($ID)"; //wir schauen ob es schon einen
+            $stmt=$dbh->prepare($sql);                                                   // eine folgebeziehung gibt
             $stmt->bindParam(":sessionID",$_SESSION["ID"]);
             $stmt->execute();
             $ergebnis=$stmt->fetch();
 
-            if ($ergebnis != false){ ?>
+            if ($ergebnis != false){ ?>   <!-- wenn ja, dann wird der button folgen angezeigt,wenn nicht dann entfolgen-->
                 <a href="Funktionen/entfolgen.php?ID=<?= $ID ?> " class="btn btn-default" role="button">nicht mehr folgen</a>
             <?php } else {
                 ?>

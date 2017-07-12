@@ -1,10 +1,10 @@
 <?php
 
-session_start();
+session_start(); //notwendig für mehrbenutzerfähigkeit
 
-if (isset($_SESSION["ID"])) {
+if (isset($_SESSION["ID"])) {       //ist eine sessionid vorhanden?
 
-    header("location: Landingpage.php");
+    header("location: Landingpage.php"); //weiterleitung an landingpage
 }
 ?>
 <!DOCTYPE html>
@@ -37,6 +37,9 @@ if (isset($_SESSION["ID"])) {
                     Social Media Platform!
                 </p>
                 <br>
+
+
+                <!-- Formular zum anmelden, wird mit post methode weitergegeben an Funktionen/login.php-->
 
                 <form action="Funktionen/login.php" method="post">
 

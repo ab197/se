@@ -1,20 +1,20 @@
 <?php
 
+//standart registrierung, schreiben der Daten in die Datenbank
 
-//wir binden unser Datenbanklogin ein
 
-include "../dbh.php";
-
+include "../dbh.php"; //wir binden unser Datenbanklogin ein
 
 $error=false;
+//die Daten werden mithilfe der Post-methode gelesen und in variablen gespeichert
 $username=$_POST["Username"];
 $email=$_POST["Email"];
 $password=$_POST["Passwort"];
 $password2=$_POST["Passwort2"];
 
-if ($password===$password2) {
+if ($password===$password2) {   //überprüfung ob das passwort gleich ist
 
-    $password= password_hash($password, PASSWORD_DEFAULT);
+    $password= password_hash($password, PASSWORD_DEFAULT);  //passwort wird verschlüsselt
 }
 
 else {
@@ -27,18 +27,19 @@ else {
 
 if ($error===false) {
 
+// sql query : Befehl um etwas Datenbanken einzutragen oder abzufragen, löschen etc.
 
     $sql = "INSERT INTO user(Benutzername, Email, Passwort) VALUES (:Benutzername, :Email, :Passwort)";
 
     $stmt = $dbh->prepare($sql);
 
-    $stmt->bindParam(":Benutzername", $username);
+    $stmt->bindParam(":Benutzername", $username);   //variablen werden Parametern zugewiesen
 
-    $stmt->bindParam(":Email", $email);
+    $stmt->bindParam(":Email", $email);             // ... ist sicherer stichwort sql injection
 
     $stmt->bindParam(":Passwort", $password);
 
-    $stmt->execute();
+    $stmt->execute();    // Anfrage an Datenbank wird ausgeführt
 
     //Standard Profilbild einfügen für jeden neuen Nutzer
     $sql = "SELECT ID FROM user WHERE Email = :Email";
@@ -53,7 +54,7 @@ if ($error===false) {
 
     copy($profilbild, "../Bilder/Profilbild/".$user['ID'].".png");
 
-    header("location: ../Login.php");
+
 
     //sich selber folgen
 
@@ -66,5 +67,5 @@ if ($error===false) {
     $stmt->bindParam(":folgt_ID", $user['ID']);
 
     $stmt->execute();
-
+    header("location: ../Login.php");
 }

@@ -73,8 +73,8 @@ $ID = $_SESSION["ID"];
 
     <div class="container" style="margin-top: 60px;">
         <?php
-        if (isset($_POST['suche'])) {
-            $suche="%".$_POST["suche"]."%";
+        if (isset($_POST['suche'])) {    //wenn was eingegeben wurde mit post übertragen
+            $suche="%".$_POST["suche"]."%";  //sucheingabe mit Platzhalter davor und danach
             $sql="SELECT * FROM user WHERE Benutzername LIKE :name";
 
 
@@ -87,7 +87,7 @@ $ID = $_SESSION["ID"];
             $users=$stmt->fetchAll();
 
             if ($users != false) {
-            foreach ($users as $user) {
+            foreach ($users as $user) {  //für jedes gefundene ergebnis wird benutzername,link,bild angezeigt
 ?>
                 <div class="panel panel-default">
                     <div class="panel-body">
@@ -104,7 +104,7 @@ $ID = $_SESSION["ID"];
         <?php
             }
         } else {
-            echo "es wurde kein User gefunden.";
+            echo "es wurde kein User gefunden.";  //wenn nicht wird das angezeigt
         }}
         ?>
     </div>

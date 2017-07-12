@@ -8,9 +8,13 @@ session_start();
 include "../dbh.php";
 
 
+//altes/neues Passwort aus post
+
 $passwortalt= $_POST["passwortalt"];
 $passwortneu= $_POST["passwortneu"]; $passwortneu= password_hash($passwortneu, PASSWORD_DEFAULT);
 $email=$_SESSION["Email"];
+
+//user mit email aus Session wird in datenbank gesucht und als variable gespeichert
 
 $sql="SELECT * FROM user WHERE Email=:Email";
 
@@ -23,7 +27,9 @@ $stmt->execute();
 
 $user=$stmt->fetch();
 
-if (password_verify($passwortalt, $user["Passwort"])) {
+if (password_verify($passwortalt, $user["Passwort"])) {   //altes passwort wird überprüft, wenn richtig pw aktualisiert
+
+
 
     $sql="UPDATE user SET Passwort= :passwortneu WHERE ID = :ID";
     $stmt=$dbh->prepare ($sql);

@@ -1,5 +1,7 @@
 <?php
 
+//post wird in der Datenbank akualisiert, (über get)
+
 session_start();include "../dbh.php";
 
 $text=$_POST["text"];

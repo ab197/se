@@ -1,9 +1,9 @@
 <?php
 
-include "dbh.php";
+include "dbh.php";   //datenbank wird eingebunden
 session_start();
 
-if (!isset($_SESSION["ID"])) {
+if (!isset($_SESSION["ID"])) { //wenn man nicht angemeldet ist wird man zurückgeleitet auf login.php
 
     header("location: Login.php");
 }
@@ -65,7 +65,12 @@ $ID = $_SESSION["ID"];
 
             <div class="gemini">
 
+                <!-- Profilbild wird angezeigt-->
+
             <img src="Bilder/Profilbild/<?= $_SESSION['ID'] ?>" class="img-responsive">
+
+               <!--Profilname wird angezeigt-->
+
             <h2><?= $_SESSION["Benutzername"] ?></h2>
 
 
@@ -79,24 +84,37 @@ $ID = $_SESSION["ID"];
 
 
                 <?php
+
+                /*
+                 * wir wählen aus der Datenbank alle Verbindungen raus zwischen angemeldetem Benutzer
+                 * und den Benutzern denen er folgt (nur ID)
+                 */
+
                 $sql="SELECT folgt_ID FROM folgen WHERE user_ID = ($ID)";
                 $stmt=$dbh->prepare($sql);
                 $stmt->execute();
-                $ergebnis=$stmt->fetchAll();
-                foreach ($ergebnis as $value ){
+                $ergebnis=$stmt->fetchAll();    //ergebnis der Abfrage :arrayliste mit entsprechenden Verbindungen
+                foreach ($ergebnis as $value ){   //für jedes element der arrayliste wird ausgeführt,jede verbindung
+                                                  //... wird einzeln betrachtet
 
 
-                    $sql="SELECT * FROM user WHERE ID = :ID";
+                    $sql="SELECT * FROM user WHERE ID = :ID"; //wir suchen in der anderen Datenbank den nutzernamen
+                                                              //der Person der gefolgt wird
                     $stmt=$dbh->prepare($sql);
                     $stmt->bindParam(":ID", $value["folgt_ID"]);
 
                     $stmt->execute();
                     $User=$stmt->fetch();
 
-                    $User=$User["Benutzername"];
+                    $User=$User["Benutzername"];   //der Username wird in einer variable gespeichert
                     ?>
+
+
                     <div class="row" style="margin-bottom: 10px;">
                         <div class="col-xs-3">
+
+                            <!-- Profilbild wird angezeigt, Name wird angezeigt von person der man folgt inklusive link-->
+
                             <a href="User.php?ID=<?= $value['folgt_ID'] ?>">
                                 <img src="Bilder/Profilbild/<?= $value['folgt_ID'] ?>" class="img-responsive">
                             </a>
@@ -115,32 +133,32 @@ $ID = $_SESSION["ID"];
 
 <h1>Alle Posts</h1>
 
-<?php
+<?php        //wie oben verbindungen zu folgebeziehungen
 $ID=$_SESSION["ID"];
 $sql = "SELECT * FROM folgen WHERE user_ID= :user_ID";
 $stmt=$dbh->prepare ($sql);
 $stmt->bindParam(":user_ID", $ID);
 $stmt->execute();
 $folgen=$stmt->fetchAll();
-$folgt = array();
+$folgt = array(); //wir erstellen ein leeres array wo die zu folgenden user_id s eingetragen werden
 
-foreach ($folgen as $value){
+foreach ($folgen as $value){    //jedes element wird einzeln betrachtet
     $folgt[] = $value["folgt_ID"];
 }
 
-$folgt=implode(",",$folgt);
+$folgt=implode(",",$folgt);  //array wird in string umgewandelt
 
 
 
 
 
-$sql="SELECT * FROM posts WHERE user_ID IN ($folgt) ORDER BY Datum DESC";
+$sql="SELECT * FROM posts WHERE user_ID IN ($folgt) ORDER BY Datum DESC";  //Posts in datenbank suchen
 $stmt=$dbh->prepare ($sql);
 $stmt->execute();
 $result=$stmt->fetchAll();
 
 
-foreach ($result as $row) {
+foreach ($result as $row) {  //für jeden post wird der benutzername in einer variablen gespeichert
     $sql = "SELECT Benutzername FROM user WHERE ID = :user_ID";
     $stmt= $dbh->prepare($sql);
 
@@ -156,6 +174,8 @@ foreach ($result as $row) {
 
     <div class="panel panel-default">
         <div class="panel-heading">
+
+            <!--Benutzername und Datum wird angezeigt, Benutzername ist ein link zur profilseite-->
                 <a href="User.php?ID=<?= $row['user_ID']?>">
                 <h2 class="panel-title"><?= $user['Benutzername'] ?></h2> </a>
                 <span style="color: #AAA;"><?= $row['Datum'] ?></span>
@@ -165,18 +185,23 @@ foreach ($result as $row) {
         <div class="panel-body">
             <div class="row">
                 <div class="col-xs-1">
+
+                    <!--profilbild -->
                     <img src="Bilder/Profilbild/<?= $row['user_ID'] ?>" class="img-responsive">
                     </div>
                 <div class="col-xs-11">
 
             <?php
-            if ($row['bild'] != NULL)
+            if ($row['bild'] != NULL)   //wenn ein bild hochgeladen wurde (in db gespeichert)wird es angezeigt
             {
                 ?>
                 <img src="Bilder/<?= $row['bild'] ?>" class="img-responsive" style="margin-bottom: 50px;">
                 <?php
             }
             ?>
+                   <!-- der text des post der angezeigt werden soll-->
+
+
             <p class="lead">
                 <?= $row['text'] ?>
             </p>
@@ -187,9 +212,13 @@ foreach ($result as $row) {
 
 
 
+        <!--link anzeigen geht zu view post(id wird mit get übergeben)-->
 
             <a href='Viewpost.php?id=<?=$row['ID']?>'>anzeigen</a>
             <?php
+
+
+            //wenn angemeldeter Nutzer dem Urheber des Posts enspricht, dann auch gelöscht und editiert werden
             if ($_SESSION["ID"] == $row["user_ID"]) {
             ?>
             <a href='Funktionen/deletepost.php?id=<?=$row['ID']?>'>löschen</a>

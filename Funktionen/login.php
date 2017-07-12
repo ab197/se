@@ -21,12 +21,16 @@ $stmt->execute();
 
 $user=$stmt->fetch();
 
-if ($user !=FALSE && password_verify($password, $user["Passwort"])) {
+if ($user !=FALSE && password_verify($password, $user["Passwort"])) {  //überprüfen ob ein Nutzer gefunden wurde/abfrage
+                                                                       // UND eingegebenes PW muss mit gespeichertem
+                                                                       // PW übereinstimmen
 
-    $_SESSION["ID"]= $user["ID"];
+
+
+    $_SESSION["ID"]= $user["ID"];                                       //die sessionvariablen werden definiert
     $_SESSION["Email"]= $user["Email"];
     $_SESSION["Benutzername"]= $user["Benutzername"];
-    header("location: ../Landingpage.php");
+    header("location: ../Landingpage.php");                             //weiterleitung zur landingpage
 }
 
-else { echo "Dieser Benutzer wurde nicht gefunden! Oder das Passwort ist Falsch!";}
+else { echo "Dieser Benutzer wurde nicht gefunden! Oder das Passwort ist Falsch!";}  //falls nicht korrekt fehlermeldung

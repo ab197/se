@@ -1,5 +1,7 @@
 <?php
 
+//post aus der Datenbank löschen, ID wird über get übergeben
+
 session_start();include "../dbh.php";
 
 if (!isset($_SESSION["ID"])) {
