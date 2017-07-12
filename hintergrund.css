@@ -21,17 +21,21 @@ body {
 
     padding-top: 60px;
 
+}
     /* Macht, dass die "Panele" mit dieser Funktion 60px von der Oberen Kante weg sind */
 
 .gemini {
 
-    font-size: 50pt;
-    font-family: sans-serif;
+
     color: white;
     text-shadow: 0 0 5px black;
 
-    /* macht, dass schriften hier weiß sind und einen schwarzen Rahmen haben */
 }
+
+    /* macht, dass schriften hier weiß sind und einen schwarzen Rahmen haben */
+
+
+
 .panel {
     background-color: rgba(255, 255, 255, 0.7532);
     /* Hintergrundfarbe für die Panele */
@@ -39,6 +43,8 @@ body {
 
 .panel-transparent .panel-body{
     background: rgba(46, 51, 56, 0.2)!important;
+
+}
 
 .margin-base-vertical {
     margin: 40px 0;

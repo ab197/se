@@ -75,28 +75,40 @@ $ID = $_SESSION["ID"];
 
                 </div>
 
-            <div class="row">
-
-
-            <?php
-            $sql="SELECT folgt_ID FROM folgen WHERE user_ID = ($ID)";
-            $stmt=$dbh->prepare($sql);
-            $stmt->execute();
-            $ergebnis=$stmt->fetchAll();
-            foreach ($ergebnis as $value ){
-                ?>
-
-                <div class="col-xs-3">
-                    <a href="User.php?ID=<?= $value['folgt_ID'] ?>">
-                        <img src="Bilder/Profilbild/<?= $value['folgt_ID'] ?>" class="img-responsive">
-                    </a>
-                </div>
+            <div class="container-fluid">
 
 
                 <?php
-            }
-            ?>
+                $sql="SELECT folgt_ID FROM folgen WHERE user_ID = ($ID)";
+                $stmt=$dbh->prepare($sql);
+                $stmt->execute();
+                $ergebnis=$stmt->fetchAll();
+                foreach ($ergebnis as $value ){
 
+
+                    $sql="SELECT * FROM user WHERE ID = :ID";
+                    $stmt=$dbh->prepare($sql);
+                    $stmt->bindParam(":ID", $value["folgt_ID"]);
+
+                    $stmt->execute();
+                    $User=$stmt->fetch();
+
+                    $User=$User["Benutzername"];
+                    ?>
+                    <div class="row" style="margin-bottom: 10px;">
+                        <div class="col-xs-3">
+                            <a href="User.php?ID=<?= $value['folgt_ID'] ?>">
+                                <img src="Bilder/Profilbild/<?= $value['folgt_ID'] ?>" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-xs-9">
+                            <a href="User.php?ID=<?= $value['folgt_ID'] ?>">
+                                <span class="lead gemini"><?= $User ?></span>
+                            </a>
+                        </div></div>
+                    <?php
+                }
+                ?>
             </div>
     </div>
     <div class="col-md-9">
@@ -122,7 +134,7 @@ $folgt=implode(",",$folgt);
 
 
 
-$sql="SELECT * FROM posts WHERE user_ID IN ($folgt) ORDER BY Datum";
+$sql="SELECT * FROM posts WHERE user_ID IN ($folgt) ORDER BY Datum DESC";
 $stmt=$dbh->prepare ($sql);
 $stmt->execute();
 $result=$stmt->fetchAll();

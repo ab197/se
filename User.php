@@ -103,10 +103,9 @@ if (isset($_GET["ID"])) {
 
             <div class="gemini">
             <h2>folgt: </h2>
-
             </div>
+            <div class="container-fluid">
 
-            <div class="row">
 
             <?php
             $sql="SELECT folgt_ID FROM folgen WHERE user_ID = ($ID)";
@@ -114,14 +113,28 @@ if (isset($_GET["ID"])) {
             $stmt->execute();
             $ergebnis=$stmt->fetchAll();
             foreach ($ergebnis as $value ){
-                ?>
 
+
+                $sql="SELECT * FROM user WHERE ID = :ID";
+                $stmt=$dbh->prepare($sql);
+                $stmt->bindParam(":ID", $value["folgt_ID"]);
+
+                $stmt->execute();
+                $User=$stmt->fetch();
+
+                $User=$User["Benutzername"];
+                ?>
+                <div class="row" style="margin-bottom: 10px;">
                 <div class="col-xs-3">
                     <a href="User.php?ID=<?= $value['folgt_ID'] ?>">
                         <img src="Bilder/Profilbild/<?= $value['folgt_ID'] ?>" class="img-responsive">
                     </a>
                 </div>
-
+                <div class="col-xs-9">
+                    <a href="User.php?ID=<?= $value['folgt_ID'] ?>">
+                        <span class="lead gemini"><?= $User ?></span>
+                    </a>
+</div></div>
                 <?php
             }
             ?>
