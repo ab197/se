@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9f26ddeb-f330-492e-80f0-225447516970" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funktionen/profilbild.php" afterPath="$PROJECT_DIR$/Funktionen/profilbild.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funktionen/registrierung.php" afterPath="$PROJECT_DIR$/Funktionen/registrierung.php" />
     </list>
     <ignored path="se.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,16 +89,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hintergrund.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hintergrund.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Impressum.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Impressum.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,10 +112,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registrierung.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="registrierung.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Funktionen/registrierung.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="1430">
               <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
               <folding>
                 <marker date="1499863286245" expanded="true" signature="425:514" ph="INSERT INTO user... " />
@@ -135,6 +123,16 @@
                 <marker date="1499863286245" expanded="true" signature="784:824" ph="SELECT ID FR... user" />
                 <marker date="1499863286245" expanded="true" signature="1188:1254" ph="INSERT INTO folgen... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Profil.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Profil.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,7 +182,6 @@
         <option value="$PROJECT_DIR$/Funktionen/entfolgen.php" />
         <option value="$PROJECT_DIR$/Editieren.php" />
         <option value="$PROJECT_DIR$/Newpost.php" />
-        <option value="$PROJECT_DIR$/Profil.php" />
         <option value="$PROJECT_DIR$/Viewpost.php" />
         <option value="$PROJECT_DIR$/Registrierung.php" />
         <option value="$PROJECT_DIR$/Wersindwir.php" />
@@ -199,6 +196,7 @@
         <option value="$PROJECT_DIR$/Funktionen/passwort.php" />
         <option value="$PROJECT_DIR$/Funktionen/profilbild.php" />
         <option value="$PROJECT_DIR$/Funktionen/registrierung.php" />
+        <option value="$PROJECT_DIR$/Profil.php" />
       </list>
     </option>
   </component>
@@ -392,7 +390,7 @@
       <workItem from="1499759534854" duration="9525000" />
       <workItem from="1499769555314" duration="12480000" />
       <workItem from="1499854177524" duration="88000" />
-      <workItem from="1499854709871" duration="6245000" />
+      <workItem from="1499854709871" duration="6387000" />
     </task>
     <task id="LOCAL-00001" summary="passwort">
       <created>1499168719045</created>
@@ -548,11 +546,25 @@
       <option name="project" value="LOCAL" />
       <updated>1499862720539</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="ein Fehller weniger, selber folgen">
+      <created>1499863324338</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1499863324338</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fehler behoben Profil">
+      <created>1499863427190</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1499863427190</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95854000" />
+    <option name="totallyTimeSpent" value="95996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="0" width="1932" height="1048" extended-state="0" />
@@ -603,7 +615,9 @@
     <MESSAGE value="userseite/verlinkung" />
     <MESSAGE value="default profilbild" />
     <MESSAGE value="default profilbild nochmal" />
-    <option name="LAST_COMMIT_MESSAGE" value="default profilbild nochmal" />
+    <MESSAGE value="ein Fehller weniger, selber folgen" />
+    <MESSAGE value="Fehler behoben Profil" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fehler behoben Profil" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -769,13 +783,6 @@
     <entry file="file://$PROJECT_DIR$/Test Background.css" />
     <entry file="file://$PROJECT_DIR$/TestBackgroundAnleitungBootstrap.php" />
     <entry file="file://$PROJECT_DIR$/Startseite.html" />
-    <entry file="file://$PROJECT_DIR$/Profil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Whoweare.html" />
     <entry file="file://$PROJECT_DIR$/.idea/test hover.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -936,7 +943,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Funktionen/registrierung.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="1430">
           <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
           <folding>
             <marker date="1499863286245" expanded="true" signature="425:514" ph="INSERT INTO user... " />
@@ -944,6 +951,14 @@
             <marker date="1499863286245" expanded="true" signature="784:824" ph="SELECT ID FR... user" />
             <marker date="1499863286245" expanded="true" signature="1188:1254" ph="INSERT INTO folgen... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Profil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
