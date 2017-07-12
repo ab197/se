@@ -15,4 +15,5 @@ $stmt->bindParam(":folgt_ID", $folgt_ID);
 
 $stmt->execute();
 
+
 header("location: ../Landingpage.php");
