@@ -41,6 +41,12 @@ if ($error===false) {
     $stmt->execute();
 
     //Standard Profilbild einfügen für jeden neuen Nutzer
+    $sql = "SELECT ID FROM user WHERE Email = :Email";
+
+    $stmt = $dbh->prepare($sql);
+    $stmt->bindParam(":Email", $email);
+    $stmt->execute();
+
     $user = $stmt->fetch();
 
     $profilbild = "../Bilder/Profilbild/defualt_user.png"; //Pfad zum Standardprofilbild
