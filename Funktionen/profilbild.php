@@ -16,14 +16,16 @@ $bild = $uploadfile;
 $uploadfile = $uploaddir . $uploadfile;
 
 
-unlink($uploaddir.$_SESSION["ID"].".jpeg");
-unlink($uploaddir.$_SESSION["ID"].".jpg");
-unlink($uploaddir.$_SESSION["ID"].".gif");
-unlink($uploaddir.$_SESSION["ID"].".png");
-
 
 
 if (move_uploaded_file($_FILES['bild']['tmp_name'], $uploadfile)) {
+
+
+    unlink($uploaddir.$_SESSION["ID"].".jpeg");
+    unlink($uploaddir.$_SESSION["ID"].".jpg");
+    unlink($uploaddir.$_SESSION["ID"].".gif");
+    unlink($uploaddir.$_SESSION["ID"].".png");
+
     //Upload erfolgreich
     $fileinfo = pathinfo($uploadfile);
     rename($uploadfile,$uploaddir. $_SESSION["ID"].".".$fileinfo["extension"] );
