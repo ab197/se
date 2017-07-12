@@ -29,7 +29,7 @@ if (move_uploaded_file($_FILES['bild']['tmp_name'], $uploadfile)) {
     rename($uploadfile,$uploaddir. $_SESSION["ID"].".".$fileinfo["extension"] );
     header("location: ../Landingpage.php");
 } else {
-    echo "Hurensohn";
+    echo "Nicht korrekt Geladen";
 
     }
 

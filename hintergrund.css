@@ -14,12 +14,14 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    /* Hier wird Festgelegt, dass das Hintergrundbild sich automatisch an die Browsergröße anpasst */
 }
 
 .apollo {
 
     padding-top: 60px;
-}
+
+    /* Macht, dass die "Panele" mit dieser Funktion 60px von der Oberen Kante weg sind */
 
 .gemini {
 
@@ -27,9 +29,12 @@ body {
     font-family: sans-serif;
     color: white;
     text-shadow: 0 0 5px black;
+
+    /* macht, dass schriften hier weiß sind und einen schwarzen Rahmen haben */
 }
 .panel {
     background-color: rgba(255, 255, 255, 0.7532);
+    /* Hintergrundfarbe für die Panele */
 }
 
 .panel-transparent .panel-body{
