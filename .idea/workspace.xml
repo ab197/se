@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9f26ddeb-f330-492e-80f0-225447516970" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Profil.php" afterPath="$PROJECT_DIR$/Profil.php" />
     </list>
     <ignored path="se.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -391,7 +390,7 @@
       <workItem from="1499759534854" duration="9525000" />
       <workItem from="1499769555314" duration="12480000" />
       <workItem from="1499854177524" duration="88000" />
-      <workItem from="1499854709871" duration="6362000" />
+      <workItem from="1499854709871" duration="6387000" />
     </task>
     <task id="LOCAL-00001" summary="passwort">
       <created>1499168719045</created>
@@ -554,11 +553,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499863324338</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Fehler behoben Profil">
+      <created>1499863427190</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1499863427190</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95971000" />
+    <option name="totallyTimeSpent" value="95996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="0" width="1932" height="1048" extended-state="0" />
@@ -610,7 +616,8 @@
     <MESSAGE value="default profilbild" />
     <MESSAGE value="default profilbild nochmal" />
     <MESSAGE value="ein Fehller weniger, selber folgen" />
-    <option name="LAST_COMMIT_MESSAGE" value="ein Fehller weniger, selber folgen" />
+    <MESSAGE value="Fehler behoben Profil" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fehler behoben Profil" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
