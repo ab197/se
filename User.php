@@ -138,7 +138,7 @@ if (isset($_GET["ID"])) {
 
     <h1>alle posts von <?= $Username ?></h1>
     <?php
-    $sql="SELECT * FROM posts WHERE user_ID = :ID";
+    $sql="SELECT * FROM posts WHERE user_ID = :ID ORDER BY Datum DESC";
     $stmt=$dbh->prepare($sql);
     $stmt->bindParam(":ID", $ID);
 

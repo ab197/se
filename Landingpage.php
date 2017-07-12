@@ -122,7 +122,7 @@ $folgt=implode(",",$folgt);
 
 
 
-$sql="SELECT * FROM posts WHERE user_ID IN ($folgt)";
+$sql="SELECT * FROM posts WHERE user_ID IN ($folgt) ORDER BY Datum";
 $stmt=$dbh->prepare ($sql);
 $stmt->execute();
 $result=$stmt->fetchAll();

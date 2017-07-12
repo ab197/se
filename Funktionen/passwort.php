@@ -35,4 +35,7 @@ if (password_verify($passwortalt, $user["Passwort"])) {
 
 }
 
-else{echo "hurensohn";}
+else
+{
+    header("location: ../Profil.php?error=1");
+}
