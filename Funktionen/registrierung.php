@@ -55,4 +55,16 @@ if ($error===false) {
 
     header("location: ../Login.php");
 
+    //sich selber folgen
+
+    $sql = "INSERT INTO folgen(user_ID, folgt_ID) VALUES (:user_ID, :folgt_ID)";
+
+    $stmt = $dbh->prepare($sql);
+
+    $stmt->bindParam(":user_ID", $user['ID']);
+
+    $stmt->bindParam(":folgt_ID", $user['ID']);
+
+    $stmt->execute();
+
 }
