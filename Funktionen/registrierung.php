@@ -40,6 +40,13 @@ if ($error===false) {
 
     $stmt->execute();
 
+    //Standard Profilbild einfügen für jeden neuen Nutzer
+    $user = $stmt->fetch();
+
+    $profilbild = "../Bilder/Profilbild/defualt_user.png"; //Pfad zum Standardprofilbild
+
+    copy($profilbild, "../Bilder/Profilbild/".$user['ID'].".png");
+
     header("location: ../Login.php");
 
 }
