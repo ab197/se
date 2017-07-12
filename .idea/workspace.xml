@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f26ddeb-f330-492e-80f0-225447516970" name="Default" comment="userseite/verlinkung">
+    <list default="true" id="9f26ddeb-f330-492e-80f0-225447516970" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funktionen/registrierung.php" afterPath="$PROJECT_DIR$/Funktionen/registrierung.php" />
     </list>
     <ignored path="se.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -386,7 +385,7 @@
       <workItem from="1499759534854" duration="9525000" />
       <workItem from="1499769555314" duration="12480000" />
       <workItem from="1499854177524" duration="88000" />
-      <workItem from="1499854709871" duration="4958000" />
+      <workItem from="1499854709871" duration="4975000" />
     </task>
     <task id="LOCAL-00001" summary="passwort">
       <created>1499168719045</created>
@@ -514,11 +513,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499857822420</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="default profilbild">
+      <created>1499862002797</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1499862002797</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94567000" />
+    <option name="totallyTimeSpent" value="94584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="0" width="1932" height="1048" extended-state="0" />
@@ -567,7 +573,8 @@
     <MESSAGE value="follow/nicht mehr folgen" />
     <MESSAGE value="userseite" />
     <MESSAGE value="userseite/verlinkung" />
-    <option name="LAST_COMMIT_MESSAGE" value="userseite/verlinkung" />
+    <MESSAGE value="default profilbild" />
+    <option name="LAST_COMMIT_MESSAGE" value="default profilbild" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
